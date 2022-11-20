@@ -1,11 +1,12 @@
 # Covi-Checker
+
 <i>Web Application to predict Covid-19 test results using Machine Learning</i><br><br>
 <b>In this project, we deploy Machine Learning algorithms to the Django web Application, where users can easily enter their symptoms and get their Covid-19 test results.</b><br><br>
-The novel coronavirus disease 2019 (COVID-19) pandemic caused by the SARS-CoV-2 continues to pose a critical and urgent threat to global health. 
+The novel coronavirus disease 2019 (COVID-19) pandemic caused by the SARS-CoV-2 continues to pose a critical and urgent threat to global health.
 The main motivation for this project is to ease the diagnosis of COVID-19 based on available data and to reduce the burden on healthcare systems.<br><br>
 
 We train different Machine Learning models on a dataset containing the most common clinical symptoms of Covid-19, (such as sore throat, shortness of breath, headache)
-and other factors like age, gender, test-indications, whether the patient have been in contact with a confirmed Covid-19 patient, or have visited foreign countries recently, and their test results for Covid-19. 
+and other factors like age, gender, test-indications, whether the patient have been in contact with a confirmed Covid-19 patient, or have visited foreign countries recently, and their test results for Covid-19.
 The Dataset used in this project is provided by the Israeli Ministry of Health.
 <br><br>The following Machine Learning Algorithms are trained in this project:
 <ul>
@@ -29,9 +30,5 @@ Following are the screenshots from this project:<br><br>
 <img src="https://raw.githubusercontent.com/Abhushan01/Covi-Checker/main/4.png" alt="result-page"><br><br>
 <b>Help-Center Page:</b><br><br>
 <img src="https://raw.githubusercontent.com/Abhushan01/Covi-Checker/main/5.png" alt="helpcenter-page">
-
-
-
-
 
 </ul>
