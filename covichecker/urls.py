@@ -19,10 +19,10 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('about',views.about),
-    path('prediction', views.prediction),
-    path('helpcenter',views.helpcenter),
+    path('/Covi-Checker/templates/index.html', views.index),
+    path('/Covi-Checker/templates/about.html',views.about),
+    path('/Covi-Checker/templates/predict.html', views.prediction),
+    path('/Covi-Checker/templates/helpcenter.html',views.helpcenter),
     path('covid',views.covid),
     
 ]

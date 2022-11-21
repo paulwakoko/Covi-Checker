@@ -35,7 +35,7 @@
           <h1 class="display-4"> {{ covid_result }}</h1>
           <hr class="my-4">
           <p>{{ detail }}</p>
-          <form action="/prediction" method="POST">{% csrf_token %} 
+          <form action="predict.html" method="POST">{% csrf_token %} 
             <button type="submit" class="btn btn-lg mt-2 pt-2 ">Try Again</button>
         </form>
         </div>

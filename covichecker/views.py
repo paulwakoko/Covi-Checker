@@ -4,16 +4,16 @@ from covichecker.modelpred import *
  
 
 def index(request):
-    return render(request,'index.html')
+    return render(request,'/Covi-Checker/templates/index.html')
 
 def about(request):
-    return render(request,'about.html')
+    return render(request,'/Covi-Checker/templates/about.html')
 
 def prediction(request):
-    return render(request,'predict.html')
+    return render(request,'/Covi-Checker/templates/predict.html')
 
 def helpcenter(request):
-    return render(request,'helpcenter.html')
+    return render(request,'/Covi-Checker/templates/helpcenter.html')
 
 def covid(request):
      #cough
@@ -65,4 +65,4 @@ def covid(request):
     params={'covid_result':covid_pred,'detail':covid_details}
        
 
-    return render(request,'result.html',params)
+    return render(request,'/Covi-Checker/templates/result.html',params)
