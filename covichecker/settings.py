@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = ''
+SECRET_KEY = 'iq3(4_&v#&0c33r+d_^aovm+2hhmeo8)^@hyubu(z-3yj2b!4e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-     'covichecker',
+    'covichecker',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'covichecker.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,7 +78,11 @@ WSGI_APPLICATION = 'covichecker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'covi-checker',
+        'HOST': 'localhost',
+        'USER': 'root',
+        'PORT': '3306',
+        'PASSWORD': '',
     }
 }
 

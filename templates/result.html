@@ -8,26 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <title>Result</title>
-    <link rel="stylesheet" href="/Covi-Checker/static/style/style.css">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
     
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid nav-cont">
-        <a class="navbar-brand" href="#">Covi-Checker</a>
+        <a class="navbar-brand" href="{% url 'index' %}">Covi-Checker</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNavAltMarkup">
           <div class="navbar-nav ">
-            <a class="nav-link active" aria-current="page" href="/Covi-Checker/templates/index.html">Home</a>
-            <a class="nav-link " href="/Covi-Checker/templates/about.html">About</a>
-            <a class="nav-link" href="/Covi-Checker/templates/predict.html">Predictor</a>
-            <a class="nav-link" href="/Covi-Checker/templates/helpcenter.html">Help-Center</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+            <a class="nav-link" href="{% url 'prediction' %}">Predictor</a>
+            <a class="nav-link" href="{% url 'helpcenter' %}">Help-Center</a>
           </div>
         </div>
       </div>
-    </nav>>
+    </nav>
 
        <!-- Flexbox container for aligning the toasts -->
       <div class="container resl-cont">
@@ -35,7 +35,7 @@
           <h1 class="display-4">Positive</h1>
           <hr class="my-4">
           <p>{{ detail }}</p>
-          <form action="predict.html" method="POST">{% csrf_token %} 
+          <form action="{% url 'prediction' %}" method="POST">{% csrf_token %} 
             <button type="submit" class="btn btn-lg mt-2 pt-2 ">Try Again</button>
         </form>
         </div>

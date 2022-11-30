@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score
 
 #reading data from csv file
 lst=[]
-df=pd.read_csv(r"C:\Users\Home\Desktop\Self-Learning\python_dev\django_dev\django_project03-CoviChecker\covichecker\Corona-report_cln.csv")
+df=pd.read_csv(r"Corona-report_cln.csv")
 
 
 #creating designing matrix X and target vector y
