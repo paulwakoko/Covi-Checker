@@ -32,15 +32,14 @@
        <!-- Flexbox container for aligning the toasts -->
       <div class="container resl-cont">
         <div class="jumbotron">
-          <h1 class="display-4">Negative</h1>
+          <h1 class="display-4">Positive</h1>
           <hr class="my-4">
-          <p>Your test result is Negative. But it is better to be safe than sorry! Always wear a mask in public places and try to maintain safe distance from others and wash your hands often. Remember only together, we can defeat this pandemic.'
-          </p>
+          <p>{{ detail }}</p>
           <form action="predict.html" method="POST">{% csrf_token %} 
             <button type="submit" class="btn btn-lg mt-2 pt-2 ">Try Again</button>
         </form>
         </div>
-  
+
       </div>
       
  
